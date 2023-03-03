@@ -278,4 +278,16 @@ hr{
 .line{
     padding: 0 1rem;
 }
-
+@media (max-width:672px) {
+    #about .col1 img{
+        width: 150%;
+     margin-left: 70%;
+    }
+    #about .col2{
+        flex-basis: 100%;
+}
+nav ul li{
+    display: none;
+;
+}
+}
