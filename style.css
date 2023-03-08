@@ -1,0 +1,293 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+  
+      
+color: #fff;   
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+body{
+ background: #000;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image:url("./images/OIP.jpg") ;
+    background-size:cover ;
+background-position: center;
+
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    background: #000;
+z-index: 10;
+}
+nav h4{
+font-size: 1.4rem;
+font-weight: 800;
+
+
+}
+nav a{
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    text-transform: capitalize;
+}
+nav li a.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.home{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.home h3{
+    position: relative;
+
+    font-size: 4rem;
+}
+.home h3 span{
+    color: orangered;
+}
+.home p{
+    font-size: 1.5rem;
+}
+.home h3::before{
+ 
+    content: '';
+    height: 9rem;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: -9px;
+    top: 20%;
+}
+.home button{
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding: .2rem 3rem;
+    font-size: 1.3rem;
+    margin-top: 2%;
+    margin-left: 2rem;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.5s;
+}
+.home button:hover{
+    border: 1px solid orangered;
+}
+#about{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    background: #000;
+    padding: 4rem 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#about .col1{
+    flex-basis: 35%;
+}
+#about .col1 img{
+    width: 100%;
+    border-radius: .5rem;
+    height: 80%;
+    
+}
+#about .col2{
+    flex-basis: 60%;
+}
+.row .col2 h4{
+    font-size: 1.8rem;
+}
+.row .col2 h4 span{
+    color: orangered;
+}
+.row .content{
+    padding: 1.8rem 0;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.row .content p{
+    cursor: pointer;
+    position: relative;
+}
+.row p{
+    margin-top: 2rem;
+    color: #5d5651;
+    font-size: 1.1rem;
+    text-indent: 2em;
+}
+.row p span{
+    color: #77685c;
+    font-weight: bold;
+}
+/* .row .content p::after{
+    content: '';
+    width: 0;
+    height: 2px;
+background: rgb(234, 125, 8);
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+} */
+/* .row .content p:hover::after{
+    width: 100%;
+} */
+.row .content ul {
+ 
+ width: 70%;
+ list-style: none;
+ margin-left: 2rem;
+
+}
+.row .content ul li{
+    padding-bottom: 1rem;
+    color: #5d5651;
+}
+.row .content ul span{
+    color: #77685c;
+    font-weight: bolder;
+}
+.row .content p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orangered;
+    padding-bottom: 2rem;
+}
+#projects{
+    height: auto;
+    width: 100%;
+  background: #000;
+    padding: 4rem 0;
+}
+#projects .container h3{
+    text-align: center;
+    font-size: 2rem;
+}
+#projects .container h3 span{
+    color: orangered;
+}
+#projects .container .images-cont{
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+     grid-gap: 1rem;
+}
+#projects .container .images-cont .images{
+    padding: 1rem;
+}
+#projects .container .images-cont .images img{
+    width: 300px;
+    height: 200px;
+    border-radius: .5rem;
+}
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+#contact .container h3{
+    text-align: center;
+    font-size: 2rem;
+}
+#contact .container h3 span{
+    color: orangered;
+}
+#contact .container .con i{
+    color: orangered;
+    font-size: 1.3rem;
+    padding: 0 .5rem;
+
+}
+#contact .container .con{
+    padding: .5rem 0;
+}
+#contact .container .icons{
+  margin-top: 10%;
+}
+#contact .container .icon{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+#contact .container .icon i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#contact .container .icon i:hover{
+    color: orangered;
+}
+hr{
+    border-color: rgb(59, 54, 54);
+}
+.line{
+    padding: 0 1rem;
+}
+@media (max-width:672px) {
+    #about .col1 img{
+        width: 150%;
+     margin-left: 70%;
+    }
+    #about .col2{
+        flex-basis: 100%;
+}
+nav ul li{
+    display: none;
+;
+}
+}
