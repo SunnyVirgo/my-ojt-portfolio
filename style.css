@@ -20,9 +20,10 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image:url("./images/OIP.jpg") ;
+    /* background-image:url("./images/OIP.jpg") ;
     background-size:cover ;
-background-position: center;
+background-position: center; */
+background: #000;
 
 }
 .container{
@@ -48,13 +49,18 @@ font-weight: 800;
 nav a{
     text-decoration: none;
 }
-nav ul li{
+nav .ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 
 }
-nav ul li a{
+
+nav .ul li:first-child{
+    display: none;
+
+}
+nav .ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
@@ -72,7 +78,7 @@ nav li a.active::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a::after{
+nav .ul li a::after{
     content: '';
     width: 0;
     height: 3px;
@@ -82,8 +88,12 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+nav .ul li a:hover::after{
     width: 100%;
+}
+nav .ul2{
+    display: none;
+
 }
 .home{
     margin-top: 10%;
@@ -286,8 +296,56 @@ hr{
     #about .col2{
         flex-basis: 100%;
 }
-nav ul li{
+nav .ul li{
     display: none;
 ;
 }
+nav{
+    padding: 10px 2%;
+}
+nav .ul li:first-child{
+    display: inline-block;
+    margin-left: 1rem;
+
+}
+nav .ul2{
+    display: none;
+    position: absolute;
+right: 2%;
+top: 100%;
+list-style: none;
+
+}
+nav li a.active{
+    color: orangered;
+}
+nav .ul2 li{
+    padding: 1rem;
+}
+
+.home h3{
+    position: relative;
+
+    font-size: 2rem;
+}
+.home p{
+    font-size: 1.2rem;
+}
+.home h3::before{
+ 
+    content: '';
+    height: 6rem;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: -9px;
+    top: 20%;
+}
+.home button{
+
+    padding: .2rem 2rem;
+    font-size: 1rem;
+  
+}
+
 }

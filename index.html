@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,162 +12,192 @@
     <link rel="shortcut icon" href="./images/hoodie.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
+
 <body>
     <nav>
-        <a href="#header"><h4>Portfolio</h4></a>
-    <ul>
-        <li> <a href="#header">Home</a> </li>
-        <li> <a href="#about">About</a></li> 
-       <li> <a href="#projects">Projects</a></li>
-      <li>  <a href="#contact">Contact</a></li>
-    </ul>
-    
+        <a href="#header">
+            <h4>Portfolio</h4>
+        </a>
+        <ul class="ul">
+            <li onclick="toggleNavbar()"> <i class="fa-solid fa-bars"></i></li>
+            <li> <a href="#header">Home</a> </li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
 
-</nav>
+
+        <ul class="ul2">
+            <li> <a href="#header">Home</a> </li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div id="header" class="section">
-        <div class="container">
-   
-<div class="home">
-    <h3>Sunny <span>Virgo</span></h3>
-    <p>Intern from University <br> of Antique</p>
-    <a href="#contact"><button>Contact</button></a>
-</div>
-</div>
-</div>
-<div id="about" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col1"><img src="./images/hoodie.webp" alt=""></div>
-            <div class="col2"><h4>About <span>Me</span></h4>
-          <p>Welcome to my portfolio! My name is <span>Sunny Virgo</span>, and I am an intern from <span>University of Antique</span>  and beginner programmer. As a passionate and driven individual, I am constantly seeking opportunities to grow and develop my skills in the field of programming. As an intern, I am eager to learn from experienced professionals, collaborate with my peers, and contribute my unique perspectives and ideas to the projects I work on. I am committed to delivering high-quality work that exceeds expectations, and am excited to see where my journey as a programmer will take me. Thank you for taking the time to visit my portfolio, and I look forward to connecting with you!</p>
-        <div class="content">
-           <div>
-            <p>Skills</p>
-            <ul>
-                <li>Basic knowledge in Html and Css</li>
-                <li>Basic knowledge in Computer Programming</li>
-            </ul>
-           </div>
-           <div>
-            <p>Training</p>
-            <ul>
-                <li><span>DICT</span><br>October 2023</li>
-                <li><span>Startup Basics Workshop Training</span><br>September 2022</li>
-        </ul>  
-        </div>
-            <div>
-                <p>Schools</p>
-            <ul>
-                <li><span>2019-2023</span><br>University of Antique</li>
-                <li><span>2007-2011</span><br>Concepcion L. Cazenas Memorial School</li>
-                <li><span>2001-2007</span><br>Dao Central School</li>
-            </ul>
-            </div>
-            
-        </div>
-        <div class="descriptions">
-         
-        </div>
-        </div>
-        </div>
-    </div>
-</div>
-<div id="projects" class="section">
-    <div class="container">
-        <h3>My <span>Projects</span></h3>
-        <div class="images-cont">
-            <div class="images">
-                <img src="./images/1.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/2.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/3.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/4.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/5.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/6.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/7.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/8.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/9.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/10.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/11.png" alt="">
-            </div>
-            <div class="images">
-                <img src="./images/12.png" alt="">
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class="line">
-    <hr></hr>
-</div>
-<div id="contact" class="section">
-
-    <div class="container">
-        <h3>Contact <span>Me</span></h3>
-        <div class="icons">
-        <div class="con"><i class="fa-solid fa-paper-plane"></i> sunny.virgo@antiquespride.edu.ph</div>
-        <div class="con"><i class="fa-sharp fa-solid fa-phone-volume"></i> 09970947916</div>
-    </div>
-        <div class="icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-facebook-messenger"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-
-        </div>
        
+        <div class="container">
+
+            <div class="home">
+                <h3>Sunny <span>Virgo</span></h3>
+                <p>Intern from University <br> of Antique</p>
+                <a href="#contact"><button>Contact</button></a>
+            </div>
+        </div>
     </div>
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col1"><img src="./images/hoodie.webp" alt=""></div>
+                <div class="col2">
+                    <h4>About <span>Me</span></h4>
+                    <p>Welcome to my portfolio! My name is <span>Sunny Virgo</span>, and I am an intern from
+                        <span>University of Antique</span> and beginner programmer. As a passionate and driven
+                        individual, I am constantly seeking opportunities to grow and develop my skills in the field of
+                        programming. As an intern, I am eager to learn from experienced professionals, collaborate with
+                        my peers, and contribute my unique perspectives and ideas to the projects I work on. I am
+                        committed to delivering high-quality work that exceeds expectations, and am excited to see where
+                        my journey as a programmer will take me. Thank you for taking the time to visit my portfolio,
+                        and I look forward to connecting with you!</p>
+                    <div class="content">
+                        <div>
+                            <p>Skills</p>
+                            <ul>
+                                <li>Basic knowledge in Html and Css</li>
+                                <li>Basic knowledge in PHP</li>
+                                <li>Basic knowledge in Computer Programming</li>
+                                <li>Git & Github</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Training</p>
+                            <ul>
+                                <li><span>DICT</span><br>October 2023</li>
+                                <li><span>Startup Basics Workshop Training</span><br>September 2022</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Schools</p>
+                            <ul>
+                                <li><span>2019-2023</span><br>University of Antique</li>
+                                <li><span>2007-2011</span><br>Concepcion L. Cazenas Memorial School</li>
+                                <li><span>2001-2007</span><br>Dao Central School</li>
+                            </ul>
+                        </div>
 
-</div>
-<div class="line">
-    <hr></hr>
-</div>
-<script>
-    const sections = document.querySelectorAll('div');
-const navLinks = document.querySelectorAll('nav li a');
+                    </div>
+                    <div class="descriptions">
 
-const options = {
-  threshold: 0.5 
-};
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="section">
+        <div class="container">
+            <h3>My <span>Projects</span></h3>
+            <div class="images-cont">
+                <div class="images">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/2.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/3.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/4.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/5.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/6.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/7.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/8.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/9.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/10.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/11.png" alt="">
+                </div>
+                <div class="images">
+                    <img src="./images/12.png" alt="">
+                </div>
+            </div>
+        </div>
 
-const observer = new IntersectionObserver(function(entries) {
-  entries.forEach(entry => {
-    const id = entry.target.getAttribute('id');
-    const navLink = document.querySelector(`nav li a[href="#${id}"]`);
+    </div>
+    <div class="line">
+        <hr>
+        </hr>
+    </div>
+    <div id="contact" class="section">
 
-    if (entry.isIntersecting) {
-      navLink.classList.add('active');
-    } else {
-      navLink.classList.remove('active');
-    }
-  });
-}, options);
+        <div class="container">
+            <h3>Contact <span>Me</span></h3>
+            <div class="icons">
+                <div class="con"><i class="fa-solid fa-paper-plane"></i> sunny.virgo@antiquespride.edu.ph</div>
+                <div class="con"><i class="fa-sharp fa-solid fa-phone-volume"></i> 09970947916</div>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
 
-sections.forEach(section => {
-  observer.observe(section);
-});
+        </div>
 
-</script>
+    </div>
+    <div class="line">
+        <hr>
+        </hr>
+    </div>
+    <script>
+        const sections = document.querySelectorAll('div');
+        const navLinks = document.querySelectorAll('nav li a');
+
+        const options = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                const navLink = document.querySelector(`nav li a[href="#${id}"]`);
+
+                if (entry.isIntersecting) {
+                    navLink.classList.add('active');
+                } else {
+                    navLink.classList.remove('active');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        function toggleNavbar() {
+  var navbar = document.querySelector('.ul2');
+  if (navbar.style.display === 'none') {
+    navbar.style.display = 'block';
+  } else {
+    navbar.style.display = 'none';
+  }
+}
+
+    </script>
 </body>
 
 </html>
